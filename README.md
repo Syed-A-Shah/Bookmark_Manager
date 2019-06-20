@@ -1,5 +1,5 @@
 
-# :book: Bookmark Manager :book:
+# :bookmark: Bookmark Manager :bookmark:
 ## Domain Model
 ![Bookmark Manager domain model](./public/images/bookmark_manager_1.png)
 ## How to use
