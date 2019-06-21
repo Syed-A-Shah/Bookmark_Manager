@@ -2,7 +2,7 @@ require 'sinatra/base'
 require './lib/bookmark'
 
   class BookmarkManager < Sinatra::Base
-
+    p ENV
   get '/' do
    '<a href="/bookmarks">Bookmark Manager🔖</a><br>'
   end
