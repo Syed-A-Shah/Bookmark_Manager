@@ -11,7 +11,7 @@ I would like to see a list of bookmarks
 
 ## Domain Model
 
-[Bookmark Manager domain model](./public/images/domain_model)
+[](./public/images/domain_model)
 
 ## How to use
 
