@@ -11,7 +11,7 @@ I would like to see a list of bookmarks
 
 ## Domain Model
 
-[Domain model](./public/images/domain_model)
+[Domain model](./images/domain_model)
 
 ## How to use
 
