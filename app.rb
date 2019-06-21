@@ -3,6 +3,7 @@ require './lib/bookmark'
 
   class BookmarkManager < Sinatra::Base
     p ENV
+
   get '/' do
    erb :index
   end
@@ -17,7 +18,7 @@ require './lib/bookmark'
    end
 
    post '/bookmarks' do
-     Bookmark.create(url: params[:url])
+     Bookmark.create(url: params[:url], title: params[:title])
      redirect '/bookmarks'
    end
   run! if app_file == $0
