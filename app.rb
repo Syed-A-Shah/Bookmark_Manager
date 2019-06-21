@@ -4,7 +4,7 @@ require './lib/bookmark'
   class BookmarkManager < Sinatra::Base
     p ENV
   get '/' do
-   '<a href="/bookmarks">Bookmark Manager🔖</a><br>'
+   erb :index
   end
 
   get '/bookmarks' do
