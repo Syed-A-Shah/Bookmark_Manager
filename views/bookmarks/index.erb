@@ -11,8 +11,29 @@
 
 <html>
 <body background="https://i.pinimg.com/originals/30/43/12/30431252bfb916c5700f78483c09074e.jpg">
+
+  <style>
+  .block {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 28px;
+    font-size: 22px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .block:hover {
+    background-color: #ddd;
+    color: purple;
+  }
+  </style>
+
+<center>
   <form action="/bookmarks/add">
-     <button type="submit">Add Bookmark</button>
-  </form>
+       <button class="block" type="submit">Add Bookmark</button>
+  </form></center>
 </body>
 </html>
