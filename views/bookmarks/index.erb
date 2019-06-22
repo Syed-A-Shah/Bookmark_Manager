@@ -3,7 +3,7 @@
   <% @bookmarks.each do |bookmark| %>
     <li>
       <a href="<%= bookmark.url %>">
-         <font color="red"><li><%= bookmark.title %></li></font>
+         <font color="white"><li><%= bookmark.title %></li></font>
       </a>
     </li>
   <% end %>
@@ -13,27 +13,53 @@
 <body background="https://i.pinimg.com/originals/30/43/12/30431252bfb916c5700f78483c09074e.jpg">
 
   <style>
-  .block {
-    display: block;
-    width: 100%;
-    border: none;
-    background-color: #4CAF50;
-    color: white;
-    padding: 8px 28px;
-    font-size: 22px;
-    cursor: pointer;
-    text-align: center;
-  }
+.block {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 250px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
 
-  .block:hover {
-    background-color: #ddd;
-    color: purple;
-  }
-  </style>
+.block span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
 
-<center>
+.block span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.block:hover span {
+  padding-right: 25px;
+}
+
+.block:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
   <form action="/bookmarks/add">
-       <button class="block" type="submit">Add Bookmark</button>
-  </form></center>
+       <button class="block" type="submit">Add <span>Bookmark</span></button>
+  </form>
+  <form action="/bookmarks/edit">
+       <button class="block" type="submit">Edit <span>Bookmark</span></button>
+  </form>
+  <form action="/bookmarks/delete">
+       <button class="block" type="submit">Delete <span>Bookmark</span></button>
+  </form>
 </body>
 </html>
